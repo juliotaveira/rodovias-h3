@@ -1,0 +1,21 @@
+[project]
+name = "rodovias-h3"
+version = "0.2.0"
+description = "Consulta offline do código H3 de rodovias federais (BR + UF + km), a partir do traçado do SNV"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Julio Taveira" }]
+requires-python = ">=3.10"
+dependencies = ["h3 (>=4.0,<5.0)"]
+
+[tool.poetry]
+packages = [{ include = "rodovias_h3", from = "src" }]
+include = [{ path = "src/rodovias_h3/dados/*.csv.gz", format = ["sdist", "wheel"] }]
+
+[dependency-groups]
+dev = ["pytest (>=8.0)"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
