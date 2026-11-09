@@ -9,13 +9,13 @@ A única dependência é a biblioteca [`h3`](https://pypi.org/project/h3/). Os d
 Requer Python 3.10 ou mais recente.
 
 ```bash
-pip install "git+https://github.com/<seu-usuario>/rodovias-h3.git@v0.2.0"
+pip install "git+https://github.com/juliotaveira/rodovias-h3.git@v0.2.0"
 ```
 
 Com Poetry:
 
 ```bash
-poetry add git+https://github.com/<seu-usuario>/rodovias-h3.git#v0.2.0
+poetry add git+https://github.com/juliotaveira/rodovias-h3.git#v0.2.0
 ```
 
 ## Uso
